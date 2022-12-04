@@ -27,13 +27,17 @@
     margin: 0px 5%;
 }
 
+ul {
+    list-style: none;
+  }
+
 /* Header */
 
 #header{
     display: grid;
     height: 10%;;
-    background-color: #7297A0;
-    grid-template-rows: 2fr 1fr 1fr;
+    background-color: #ffffff;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
     "nameTag"
@@ -48,7 +52,7 @@
 #navBar{
     display: flex;
     grid-area: navBar;
-    background-color: #54738E ;
+    background-color: rgb(0, 0, 0);
     justify-content: space-evenly;
     align-items: right;
     padding: 2%;
@@ -61,7 +65,10 @@
     display: flex;
     flex-direction: row;
     margin: 0px 5%;
-    pad: 1%;
+    padding: 1%;
+    color: white;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 0.5rem;
     
 }
 
@@ -78,9 +85,10 @@
     height: 300px;
 }
 
-.hero-name, .hero-subtitle {
+.hero-name, .hero-subtitle, .work-item-text {
     color: whitesmoke;
     background-color: rgba(8, 6, 6, 0.8);
+    max-width:fit-content;
 }
 
 
@@ -88,7 +96,6 @@
     font-size: 5rem;
     font-size: 4em;
     padding: 1rem;
-    max-width: 6rem;
     align-self: flex-start;
 }
 
@@ -105,7 +112,7 @@
 
 /* Work */
 
-#workGrid{
+#workGrid {
     display: grid;
     justify-content: center;
     margin: 0px 5%;
@@ -127,6 +134,17 @@
     padding: 15px;
 }
 
+.work-link {
+    height: 100%;
+    width: 100%;
+}
+
+.work-item-text {
+    color: whitesmoke;
+    background-color: rgba(8, 6, 6, 0.8);
+    max-width:fit-content;
+}
+
 #firstLink {
     grid-area: firstLink;
     background-image: url(../images/horiseon\ crop.png);
@@ -144,6 +162,11 @@
 
 #forthLink {
     grid-area: forthLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#fithLink {
+    grid-area: fithLink;
     background-image: url(../images/horiseon\ crop.png);
 }
 
