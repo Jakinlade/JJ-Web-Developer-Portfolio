@@ -1,0 +1,188 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif
+    line-height: 1.5;;
+    }
+
+#header {
+    display: grid;
+    height: 10%;;
+    background-color: #7297A0;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nameTag"
+    "portfolioTag"
+    "navBar"
+    ;
+}
+
+#nameTag, #portfolioTag {
+
+background-color: #7297A0
+
+}
+
+#navBar {
+    display: flex;
+    grid-area: navBar;
+    background-color: #54738E ;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: right;
+    padding: 2%;
+}
+
+.nav-item {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    pad: 1%;
+    
+}
+
+.hero-banner {
+    display: flex;
+    size: 80vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/Avatar-edit.jpeg);
+    height: 300px;
+}
+
+.page-wrapper {
+
+}
+
+.page-section {
+
+}
+
+#about {
+
+    
+}
+
+#work {
+   
+    
+
+}
+
+#contact {
+   
+}
+/* added 
+#workGrid {
+    display: grid;
+    justify-content: center;
+    margin: 0px 5%;
+    min-height: 500px;
+    height: 70vh;
+    grid-row-gap: 4em;
+    grid-column-gap: 4em;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "firstLink firstLink"
+    "secondLink thirdLink"
+    "forthLink fithLink"
+    ;
+}
+
+#workGridArea {
+    border-color: 1em #7297A0;
+    padding: 15px;
+}
+
+#firstLink {
+    grid-area: firstLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#secondLink {
+    grid-area: secondLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#thirdLink {
+    grid-area: thirdLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#forthLink {
+    grid-area: forthLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#fithLink {
+    grid-area: fithLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+*/
+#contact {
+
+}
+
+#resume {
+
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h1, h3 {
+    text-align: center
+    
+}
+
+.subheading {
+    font-size: ;
+    font-style: ;
+}
+
+
+
+/* Smallest Screen size: 0-769px
+Next Screen Size: 770px-979px
+Largest Screen Size: 980px - ~ */
+
+@media only screen and (max-width: 769px) {
+    #workGrid {
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 75%;
+        grid-template-areas:
+        "firstLink"
+        "secondLink"
+        "thirdLink"
+        "forthLink" 
+        "fithLink"
+        ;
+}
+
+@media only screen and (770px - 979px) {
+     #workGrid {
+        grid-template-rows: 75%;
+        grid-template-columns: 75%;
+        grid-template-areas:
+        "firstLink"
+        "secondLink"
+        "thirdLink"
+        "forthLink" 
+        "fithLink"
+            ;
+}
+
+@media only screen and (980px >) {
+    
+}
+

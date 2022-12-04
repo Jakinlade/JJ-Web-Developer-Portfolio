@@ -1,0 +1,150 @@
+/*  
+1. General
+2. Header
+3. Nav
+4. Hero
+5. About
+6. Work
+7. Contact 
+
+*/
+
+/* General */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.section-title{
+    margin: 0px 5%;
+}
+
+/* Header */
+
+#header{
+    display: grid;
+    height: 10%;;
+    background-color: #7297A0;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "nameTag"
+    "portfolioTag"
+    "navBar"
+    ;
+}
+
+/* Nav */
+
+
+#navBar{
+    display: flex;
+    grid-area: navBar;
+    background-color: #54738E ;
+    justify-content: space-evenly;
+    align-items: right;
+    padding: 2%;
+    color: #7297A0;
+}
+
+.nav-item{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    pad: 1%;
+    
+}
+
+/* Hero */
+
+#hero-banner{
+    display: flex;
+    size: 80vh;
+    justify-content: flex-start;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/JJ-7-edit.jpg);
+    height: 300px;
+}
+
+.hero-name, .hero-subtitle {
+    color: whitesmoke;
+    background-color: rgba(8, 6, 6, 0.8);
+}
+
+
+.hero-name {
+    font-size: 5rem;
+    font-size: 4em;
+    padding: 1rem;
+    max-width: 6rem;
+    align-self: flex-start;
+}
+
+.hero-subtitle{
+    font-size: 3em;
+    align-self: flex-end ;
+} 
+
+
+
+
+
+/* About */
+
+/* Work */
+
+#workGrid{
+    display: grid;
+    justify-content: center;
+    margin: 0px 5%;
+    min-height: 500px;
+    height: 70vh;
+    grid-row-gap: 4em;
+    grid-column-gap: 4em;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "firstLink firstLink"
+    "secondLink thirdLink"
+    "forthLink fithLink"
+    ;
+}
+
+#workGridArea {
+    border-color: 1em #7297A0;
+    padding: 15px;
+}
+
+#firstLink {
+    grid-area: firstLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#secondLink {
+    grid-area: secondLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#thirdLink {
+    grid-area: thirdLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+#forthLink {
+    grid-area: forthLink;
+    background-image: url(../images/horiseon\ crop.png);
+}
+
+/* Contact */
