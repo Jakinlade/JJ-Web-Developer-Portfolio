@@ -20,6 +20,7 @@
 }
 
 
+
 .container{
     width: 100%;
     margin: 0 auto;
@@ -31,7 +32,7 @@
     text-align: right;
     padding-right: 15px;
     border-right: 4px solid var(--blue);
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 1.1;
 }
 
@@ -40,7 +41,7 @@
 .page-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items:stretch;
     flex-direction: row;
     margin: 25px 0;
@@ -49,6 +50,7 @@
 
 .section-content {
     flex: 0 0 77%;
+    align-items: left;
 }
 
 ul {
@@ -111,12 +113,12 @@ ul {
 
 .hero-name, 
 .hero-subtitle, 
-.work-item-text, 
-.contact-link {
+.work-item-text {
     color: whitesmoke;
     background-color: rgb(21, 79, 133, 0.7);
     max-width:fit-content;
     text-decoration: none;
+    
 }
 
 
@@ -128,7 +130,7 @@ ul {
 }
 
 .hero-subtitle{
-    font-size: 3em;
+    font-size: 3vw;
     align-self: flex-end ;
 } 
 
@@ -140,6 +142,9 @@ ul {
 
 .about-content {
     margin: 0px 5%;
+    font-size: 2em;
+    align-self: left;
+    font-size: 1.8vw;
 }
 /* Work */
 
@@ -170,7 +175,7 @@ ul {
 .work-grid-area {
     border: .5em solid var(--blue);
     padding: 0 0 20px 0;
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
     color: #ffffff;
     min-height: 150px;
     max-height: 150px;
@@ -211,7 +216,7 @@ ul {
 
 #secondLink {
     grid-area: secondLink;
-    background-image: url(../images/horiseon\ crop.png);
+    background-image: url(../images/screencapture-jakinlade-github-io-pre-work-study-guide-2022-12-05-22_07_26.png);
 }
 
 #thirdLink {
@@ -231,11 +236,21 @@ ul {
 
 /* Contact */
 
-#contact-items {
+/* #contact {
     display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+} */
+
+.contact-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2%;
+    text-decoration: none;
+
     
 }
 
@@ -244,8 +259,8 @@ ul {
     text-decoration: none;
     margin: 0px 5%;
     padding: 1%;
-    color: white;
-    border-bottom: 2px solid whitesmoke;
+    color: rgb(10, 6, 6);
+    border-bottom: 2px solid rgb(131, 31, 31);
     padding-bottom: 0.5rem;
 }
 
@@ -253,27 +268,33 @@ ul {
 
 @media only screen and (max-width: 769px) {
     #workGrid {
-        grid-template-rows: 30% 1fr 1fr 1fr 1fr;
-        grid-template-columns: 75%;
-        grid-template-areas:
-        "firstLink"
-        "secondLink"
-        "thirdLink"
-        "forthLink" 
-        "fithLink"
-        ;
+        flex-direction: column;
+        
 }
+    .page-section {
+        flex-direction: column;
+        padding: 25px;
+    }
+    .section-title {
+        display:flex;
+        justify-content: left;
+        border-bottom: 4px solid var(--blue);
+        border-right: none;
+        padding-left: 20px;
+    }
+
+    .hero-subtitle {
+        flex-shrink: calc(20% - 1em);
+    }
+
+    .work-grid-area:first-child {
+        min-height: none;
+        flex-basis: none;
+    }
+
+    .about-content {
+        align-self: ;
+    }
 }
 
-<section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <div>
-        <address>
-          <a href="tel:+15555555555">555.555.5555</a>
-          <a href="mailto:lernantino@website.com">lernantino@website.com</a>
-          <a href="#">GitHub</a>
-          <a href="#">Twitter</a>
-          <a href="#">Spotify</a>
-        </address>
-      </div>
-    </section>
+
