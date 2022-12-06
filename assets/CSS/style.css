@@ -32,6 +32,15 @@ body {
     padding: 10px 10px;
 }
 
+.section-left {
+    width: 10%;
+}
+
+.section-right {
+    width: 90%;
+    padding-left: 10px;
+}
+
 .section-title{
     flex: 0 0 20%;
     text-align: right;
@@ -152,7 +161,7 @@ ul {
     margin: 0px 5%;
     font-size: 2em;
     align-self: center;
-    font-size: 1.8vw;
+    font-size: 1em;
     word-wrap: break-word;
 }
 /* Work */
