@@ -161,20 +161,6 @@ ul {
 
 
 #workGrid {
-    /* display: grid;
-    justify-content: center;
-    margin: 0px 5%;
-    min-height: 500px;
-    height: 70vh;
-    grid-row-gap: 4em;
-    grid-column-gap: 4em;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "firstLink firstLink"
-    "secondLink thirdLink"
-    "forthLink fithLink"
-    ; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
