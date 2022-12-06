@@ -26,6 +26,10 @@ body {
     line-height: 1.4em;
 }
 
+/* main {
+    max-width: 1200px;
+} */
+
 .container{
     width: 100%;
     margin: 0 auto;
@@ -33,19 +37,20 @@ body {
 }
 
 .section-left {
-    width: 10%;
+    width: 15%;
 }
 
 .section-right {
-    width: 90%;
+    width: 85%;
     padding-left: 10px;
+    padding-right: 5px;
+    border-left: 4px solid var(--blue);
 }
 
 .section-title{
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
-    border-right: 4px solid var(--blue);
     font-size: 3vw;
     line-height: 1.1;
 }
@@ -62,11 +67,7 @@ body {
     padding: 10px 0;
 }
 
-.section-content {
-    display: flex;
-    flex: 0 0 77%;
-    align-items: left;
-}
+
 
 ul {
     list-style: none;
@@ -163,6 +164,7 @@ ul {
     align-self: center;
     font-size: 1em;
     word-wrap: break-word;
+    padding-top: 2em;
 }
 /* Work */
 
@@ -225,7 +227,7 @@ ul {
 
 #thirdLink {
     grid-area: thirdLink;
-    background-image: url(../images/horiseon\ crop.png);
+    background-image: url(../images/Avatar-edit.jpeg);
 }
 
 #forthLink {
@@ -249,12 +251,12 @@ ul {
 .contact-items {
     display: flex;
     /* align-items: center; */
-    align-self: center;
+    /* align-self: center; */
     justify-self: center;
     justify-content: flex-end;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 2%;
+    padding: 2em;
     text-decoration: none;
 
     
@@ -285,9 +287,16 @@ ul {
     .section-title {
         display:flex;
         justify-content: left;
-        border-bottom: 4px solid var(--blue);
         border-right: none;
         padding-left: 20px;
+    }
+
+    .section-right {
+        width: 85%;
+        padding-left: 10px;
+        padding-right: 5px;
+        border-left: none;
+        border-top: 4px solid var(--blue);;
     }
 
     .hero-subtitle {
@@ -295,10 +304,14 @@ ul {
     }
 
     .work-grid-area:first-child {
-        min-height: 60%;
+        min-height: 200px;
     }
 
     .about-content {
+        flex-direction: column;
+    }
+
+    .contact-items {
         flex-direction: column;
     }
 }
