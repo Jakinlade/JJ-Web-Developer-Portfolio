@@ -13,7 +13,7 @@ https://jakinlade.github.io/JJ-Web-Developer-Portfolio/
 
 For this project, I was tasked with creating a portfolio web application using flex and grid skills learnt in the prior weeks lessons.
 
-I created a simple application that resembled the example and is able to change size with different browser widths. I made 3 different screen size layouts using Media queries.
+I created a simple application that resembled the example and is able to change size with different browser widths. I made the application to be fully responsive to 3 different screen size layouts using Media queries.
 
 <br>
 
@@ -33,7 +33,7 @@ I created a simple application that resembled the example and is able to change 
 ## Code Examples
 
 
-- Made clear comments throughout my HTML and.
+- Made clear comments throughout my HTML.
 ```html
   <header id="header">
     <!-- Nav Start -->
