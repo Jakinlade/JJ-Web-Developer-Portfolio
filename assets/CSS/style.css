@@ -275,6 +275,10 @@ ul {
 
 /* Media Queries */
 
+@media only screen and (min-width: 980px) {
+    
+}
+
 @media only screen and (max-width: 769px) {
     #workGrid {
         flex-direction: column;
