@@ -6,7 +6,6 @@
 5. About
 6. Work
 7. Contact 
-
 */
 
 /* General */
@@ -26,10 +25,6 @@ body {
     line-height: 1.4em;
     background-color: rgb(107,142,35, .3);
 }
-
-/* main {
-    max-width: 1200px;
-} */
 
 .container{
     width: 100%;
@@ -73,6 +68,7 @@ ul {
     list-style: none;
   }
 
+
 /* Header */
 
 #header{
@@ -87,8 +83,8 @@ ul {
     ;
 }
 
-/* Nav */
 
+/* Nav */
 
 #navBar{
     display: flex;
@@ -112,6 +108,7 @@ ul {
     padding-bottom: 0.3rem;
     
 }
+
 
 /* Hero */
 
@@ -152,9 +149,6 @@ ul {
 } 
 
 
-
-
-
 /* About */
 
 .about-content {
@@ -166,10 +160,9 @@ ul {
     word-wrap: break-word;
     padding-top: 2em;
 }
+
+
 /* Work */
-
-
-
 
 #workGrid {
     display: flex;
